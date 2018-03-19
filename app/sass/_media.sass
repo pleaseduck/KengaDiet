@@ -1,0 +1,146 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+  .button
+    font-size: 18px
+  #my-menu
+    position: absolute
+    top: -50px
+    opacity: 0
+    &.menu-opened
+      position: static
+      text-outline: 0
+      opacity: 1
+  #my-menu
+  	ul
+  		display: block
+  		padding-left: 0
+  		li
+  			display: block
+        width: 100%
+  			&.active, &:hover
+  				a
+  					color: #fff
+  					background-color: #000
+  					text-decoration: none
+  			a
+  				padding: 8px
+  				padding-left: 6px
+  				padding-right: 6px
+  				color: #000
+  				text-transform: uppercase
+  				font-size: 13px
+  				border-radius: 35px
+
+  .header_tel-wrapper
+    order: -10
+    justify-content: space-between !important
+    .hamburger
+      padding-top: 0
+      padding-bottom: 0
+    .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+      display: inline-block
+
+  .header-logo
+    padding-top: 13px
+    padding-bottom: 5px
+
+  .header_promo-content
+    background-size: cover
+    .h1, .h2
+      text-align: right
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+    .header_promo-content
+      .h1, .h2
+        font-size: 22px
+        line-height: 30px
+        div
+          line-height: 30px
+          font-size: 30px
+
+
+    .header_promo-content
+      .h1
+        text-align: right
+        //white-space: nowrap
+        span
+          display: block
+          text-align: right
+      .button--white
+        display: none
+      .h2
+        color: #40474d
+      .button
+        width: 100%
+
+      .button
+        font-size: 21px
+
+
+    .h3
+      font-size: 25px
+      &::after
+        bottom: -10px
+
+    .greeting
+      padding-top: 50px
+      padding-bottom: 50px
+      .h3
+        margin-bottom: 40px
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+  .header_promo-content
+    .button
+      font-size: 14px
+
+
+  .header_promo-content
+    .header_buttons-wrapper
+      margin-bottom: 38px
+
+  .h1, .h2
+    font-size: 15px
+    line-height: 26px
+
+  .header_promo-content
+    .h1
+      div
+        //font-size: 22px
+        //white-space: nowrap
+    .h2
+      margin-bottom: 5px
+      div
+        font-weight: 800
+        //font-size: 22px
+
+  .h3
+    font-size: 18px
+//Extra small: >0
++media-breakpoint-down(xs)
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
