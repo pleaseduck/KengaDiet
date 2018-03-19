@@ -204,7 +204,6 @@ ul
 .target-audience
 	background-color: #f2f2f2
 	padding-top: 50px
-	margin-bottom: 50px
 	.h3
 		margin-bottom: 75px
 	img
@@ -316,4 +315,87 @@ ul
 		font-size: 24px
 		position: relative
 		bottom: -50%
+//Алгоритм действий
+.algorithm
+	background-color: #fff
+	padding-top: 150px
+	padding-bottom: 170px
+
+.algorithm_semi-heading
+	font-family: RobotoLight
+	color: #6b7680
+	font-size: 24px
+	line-height: 24px
+	text-transform: uppercase
+	margin-top: 22px
+	margin-bottom: 20px
+
+.algorithm_step_heading
+	font-family: RobotoRegular
+	font-size: 24px
+	line-height: 24px
+	text-transform: uppercase
+	color: #40474d
+	display: flex
+	align-items: center
+	margin-bottom: 20px
+	img
+		margin-right: 22px
+	span
+		display: inline-block
+		text-align: left
+
+.algorithm
+	p
+		font-family: VerdanaRegular
+		font-size: 14px
+		line-height: 1.6
+		color: #40474d
+		margin-bottom: 0
+	.algorithm_step
+		margin-bottom: 80px
+		position: relative
+		&::after
+			content: ""
+			display: inline-block
+			width: 160px
+			height: 100px
+			position: absolute
+			//top: 0
+			background-repeat: no-repeat
+			background-position: center
+
+.algorithm_step--first
+	&::after
+		background-image: url(../img/arrow1.svg)
+		top: 22px
+		right: -40px
+
+.algorithm_step--second
+	top: 100px
+	&::after
+		background-image: url(../img/arrow2.svg)
+		top: 55px
+		left: -200px
+
+.algorithm_step--third
+	&::after
+		background-image: url(../img/arrow3.svg)
+		bottom: -80px
+		right: -50px
+.algorithm_step--fourth
+	top: 100px
+	&::after
+		background-image: url(../img/arrow4.svg)
+		bottom: -85px
+		left: -40px
+.algorithm_step--fifth
+	&::after
+		background-image: url(../img/arrow5.svg)
+		bottom: -90px
+		right: 0px
+.algorithm_step--sixth
+	top: 100px
+.right-column
+	margin-top: 100px
 @import "media" // Always at the end

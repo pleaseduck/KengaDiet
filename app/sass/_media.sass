@@ -116,6 +116,27 @@
     .target-audience_char:last-child
     	margin-bottom: 25px
 
+    .algorithm_step--second
+    	&::after
+    		background-image: url(../img/arrow2.svg)
+    		top: 85px
+    		left: -200px
+    .algorithm_step--third
+    	&::after
+    		background-image: url(../img/arrow3.svg)
+    		bottom: -50px
+    		right: -50px
+    .algorithm_step--fourth
+    	&::after
+    		background-image: url(../img/arrow4.svg)
+    		bottom: -105px
+    		left: -60px
+    .algorithm_step--fifth
+    	&::after
+    		background-image: url(../img/arrow5.svg)
+    		bottom: -130px
+    		right: 0px
+
 //Small: ≥576px
 +media-breakpoint-down(sm)
   .header_promo-content
@@ -148,6 +169,27 @@
   .target-audience
     .button
       font-size: 13px
+
+  .algorithm_step::after
+      display: none !important
+
+  .algorithm
+    padding-top: 100px
+    padding-bottom: 50px
+    &_semi-heading
+      font-size: 18px
+    .algorithm_step
+      margin-top: 30px
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+  .algorithm_step--first.algorithm_step
+    margin-top: 0
+  .algorithm_step_heading
+    font-size: 18px
+  .algorithm_step--second, .algorithm_step--fourth, .algorithm_step--sixth
+    top: 0
+
 //Extra small: >0
 +media-breakpoint-down(xs)
 /*==========  Mobile First  ==========*/
