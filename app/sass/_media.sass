@@ -8,6 +8,7 @@
 +media-breakpoint-down(xl)
   .target-audience_heading
     text-align: left
+
 //Large: ≥992px
 +media-breakpoint-down(lg)
   .button
@@ -58,7 +59,6 @@
     background-size: cover
     .h1, .h2
       text-align: right
-
 //Medium: ≥768px
 +media-breakpoint-down(md)
     .header_promo-content
@@ -137,6 +137,30 @@
     		bottom: -130px
     		right: 0px
 
+    .about-coach .text-block
+      margin-left: 0
+      top: 0
+      padding-bottom: 50px
+
+    .about-coach
+      padding-bottom: 50px
+      padding-top: 30px
+      .button-wrapper
+        order: 10
+      .social-wrapper
+        margin-bottom: 33.9px
+      .button
+        bottom: -16.1px
+      .social
+        bottom: 0
+      .text-block
+         padding-bottom: 0
+
+    .about-coach .text-block ul
+      margin-bottom: 40px
+
+    .about-coach .text-block .about-coach_rank
+      margin-bottom: 50px
 //Small: ≥576px
 +media-breakpoint-down(sm)
   .header_promo-content
@@ -189,7 +213,9 @@
     font-size: 18px
   .algorithm_step--second, .algorithm_step--fourth, .algorithm_step--sixth
     top: 0
-
+  .about-coach
+    .button
+      font-size: 12px
 //Extra small: >0
 +media-breakpoint-down(xs)
 /*==========  Mobile First  ==========*/
