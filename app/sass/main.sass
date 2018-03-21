@@ -71,6 +71,14 @@ body
 		background-color: darken(#fff, 5%)
 		color: lighten(#000, 85%)
 
+.button--transparent
+	background-color: transparent
+	padding: 4px 17px
+	border: 3px solid #ff9900
+	color: #f90
+	&:focus, &:hover
+		background-color: darken(#ff9900, 5%)
+		color: lighten(#ff9900, 85%)
 
 .h1
 	color: #000
@@ -94,6 +102,7 @@ body
 	font-family: RobotoLight
 	font-size: 36px
 	line-height: 36px
+	font-weight: 200
 	position: relative
 	&::after
 		position: absolute
@@ -513,7 +522,171 @@ ul
 			border: 2px solid #fff
 			border-top-width: 0
 			border-right-width: 0
+//Оплаты
+.payment
+	padding-top: 60px
+	padding-bottom: 60px
+	color: #fff
+	.container
+		text-align: center
+	.h3
+		color: #fff
+		margin-bottom: 40px
+	.semi-heading, p
+		font-family: RobotoLight
+		font-weight: 200
+		text-transform: uppercase
+		font-size: 24px
+		line-height: 24px
+		margin-bottom: 55px
+		display: block
+	p
+		a
+			color: #f90
+			text-decoration: underline
+			display: block
+			margin-top: 10px
+			margin-bottom: 55px
+	.tariff-carousel
+		width: 66%
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		.owl-nav
+			color: #30d143
+			font-size: 36px
+			position: absolute
+			width: 100%
+			top: 32%
+			left: 0
+			.owl-prev
+				position: absolute
+				left: -40px
+				top: 0
+			.owl-next
+				position: absolute
+				right: -40px
+		.text-wrapper
+			border: 1px solid #fff
+			padding-top: 20px
+			padding-left: 80px
+			padding-right: 80px
+			padding-bottom: 20px
+			font-family: RobotoBold
+			font-weight: 800
+			margin-bottom: 38px
+			.h4
+				color: #f90
+				font-size: 48px
+				text-transform: uppercase
+				line-height: 48px
+			p
+				font-family: RobotoBold
+				font-weight: 800
+				font-size: 24px
+				span
+					display: block
+			ul
+				text-align: left
+				font-size: 16px
+				line-height: 24px
+				padding: 0
+				li
+					span
+						display: inline-block
+						position: relative
+						padding-left: 9px
+						&::after
+							content: ""
+							width: 4px
+							height: 4px
+							background-color: #f90
+							border-radius: 10em
+							position: absolute
+							left: 0
+							top: 50%
+							margin-top: -2px
+		.sale-price, .actual-price
+			font-family: RobotoBold
+			font-weight: 800
+			font-size: 36px
+			margin-bottom: 33px
+			.fas
+				font-size: 28px
+				position: relative
+				top: -2px
+				padding-left: 10px
+		.actual-price
+			color: #f90
+		.sale-price
+			span
+				display: inline-block
+				position: relative
+				&::after
+					content: ""
+					width: 105%
+					height: 3px
+					background-color: #fff
+					position: absolute
+					top: 56%
+					left: 0
 
+.owl-carousel .owl-stage-outer
+	position: static
+//Отзывы
+.reviews
+	background-color: #f2f2f2
+	padding-top: 120px
+	padding-bottom: 70px
+	.container
+		text-align: center
+	.h3
+		margin-bottom: 80px
 
+.reviews-carousel
+	.owl-dots
+		display: none
+	.owl-nav
+		color: #30d143
+		font-size: 36px
+		position: absolute
+		width: 100%
+		top: 50%
+		margin-top: -29.5px
+		left: 0
+		.owl-prev
+			position: absolute
+			left: -40px
+			top: 0
+		.owl-next
+			position: absolute
+			right: -40px
+//Мотивация
+.motivation
+	background-color: #fff
+	padding-top: 120px
+	padding-bottom: 65px
+	.h3
+		margin-bottom: 30px
+	.motivation_text
+		padding-top: 60px
+		text-align: center
+		font-family: RobotoLight
+		font-weight: 200
+		font-size: 24px
+		line-height: 1.2
+		color: #40474c
+		span
+			font-family: RobotoBold
+			font-weight: 800
+			font-size: 30px
+			display: inline-block
+			margin-bottom: 70px
+	.johnSina-wrapper
+		margin-bottom: -65px
+		overflow-x: hidden
+		img
+			height: 100%
+			width: auto
 
 @import "media" // Always at the end
