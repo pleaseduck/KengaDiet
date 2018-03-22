@@ -890,5 +890,43 @@ ul
 
 .checkbox input:checked + .checkbox_text::after
 	display: block
+//Подвал
+.footer
+	padding-top: 30px
+	padding-bottom: 30px
+	.footer-logo
+		display: inline-block
+		border-bottom: 1px solid #fff
+		margin-bottom: 20px
+	.footer_copyright
+		color: #fff
+		font-family: VerdanaBold
+		font-size: 12px
+		line-height: 14px
+		p
+			margin-bottom: 20px
+	.footer_button
+		position: relative
+		align-items: center
+		.button
+			max-height: 55px !important
+	.footer_contacts
+		.tel
+			color: $accent
+			font-family: VerdanaRegular
+			font-size: 20px
+			line-height: 20px
+		.social
+			text-align: right
+			margin-bottom: 40px
+			img
+				margin-left: 5px
+		.payment-methods
+			text-align: right
+			.col-4
+				padding: 0
+				display: inline-block
+				img:first-of-type
+					margin-bottom: 10px
 
 @import "media" // Always at the end
