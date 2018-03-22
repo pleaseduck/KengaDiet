@@ -1,7 +1,6 @@
 $(function() {
   const hamburger = document.querySelector(".hamburger");
   const mainNav = document.querySelector("#my-menu");
-  console.log(mainNav);
 
   hamburger.addEventListener("click", function() {
     mainNav.classList.toggle("menu-opened");
@@ -38,4 +37,24 @@ $(".reviews-carousel").owlCarousel({
   }
 });
 });
+
+const firstQuestion = document.querySelector("#first-question");
+const secondQuestion = document.querySelector("#second-question");
+const thirdQuestion = document.querySelector("#third-question");
+
+firstQuestion.addEventListener("click", function() {
+  let answer = document.querySelector(".first-question");
+  answer.classList.toggle("hidden-answer")
+});
+
+secondQuestion.addEventListener("click", function() {
+  let answer = document.querySelector(".second-question");
+  answer.classList.toggle("hidden-answer")
+});
+
+thirdQuestion.addEventListener("click", function() {
+  let answer = document.querySelector(".third-question");
+  answer.classList.toggle("hidden-answer")
+});
+
 });
